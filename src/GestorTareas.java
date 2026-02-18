@@ -18,11 +18,11 @@ public class GestorTareas implements Accionable {
 
     @Override
     public void listarTareas() {
-        System.out.println("-------------- Lista de tareas --------------");
+        System.out.println("------------------ Lista de tareas ------------------");
         for (Tarea tarea : listaTareas) {
             System.out.println(tarea.toString());
         }
-        System.out.println("----------------------------------------------");
+        System.out.println("------------------------------------------------------");
     }
 
     @Override

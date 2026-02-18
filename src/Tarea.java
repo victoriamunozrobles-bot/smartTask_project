@@ -45,7 +45,8 @@ public abstract class Tarea {
 
     @Override
     public String toString() {
-        return "ID: " + id + " | Tarea: " + nombre + " | Prioridad: " + prioridad + " | Completada: " + completado;
+        String estado = completado ? "Completado" : "Pendiente";
+        return "| ID: " + id + " | Nombre: " + nombre + " | Estado: " + estado + " |";
     }
 
 }
