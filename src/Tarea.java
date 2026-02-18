@@ -2,13 +2,13 @@ public abstract class Tarea {
     private int id;
     private String nombre;
     private int prioridad;
-    private String completado;
+    private boolean completado;
 
-    public Tarea(int id, String nombre, int prioridad, String completado) {
+    public Tarea(int id, String nombre, int prioridad) {
         this.id = id;
         this.nombre = nombre;
         this.prioridad = prioridad;
-        this.completado = completado;
+        this.completado = false;
     }
 
     public int getId() {
@@ -35,11 +35,11 @@ public abstract class Tarea {
         this.prioridad = prioridad;
     }
 
-    public String getCompletado() {
+    public boolean getCompletado() {
         return completado;
     }
 
-    public void setCompletado(String completado) {
+    public void setCompletado(boolean completado) {
         this.completado = completado;
     }
 
