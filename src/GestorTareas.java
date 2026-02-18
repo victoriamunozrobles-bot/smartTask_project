@@ -11,15 +11,18 @@ public class GestorTareas implements Accionable {
     @Override
     public void agregarTarea(Tarea tarea) {
         this.listaTareas.add(tarea);
+        System.out.println("----------------------");
         System.out.println("Tarea agregada con éxito.");
+        System.out.println("----------------------");
     }
 
     @Override
     public void listarTareas() {
-        System.out.println("--- Lista de tareas ---");
+        System.out.println("-------------- Lista de tareas --------------");
         for (Tarea tarea : listaTareas) {
             System.out.println(tarea.toString());
         }
+        System.out.println("----------------------------------------------");
     }
 
     @Override
@@ -29,13 +32,17 @@ public class GestorTareas implements Accionable {
         for (Tarea tarea : listaTareas) {
             if (tarea.getId() == id) {
                 tarea.setCompletado(true);
-                System.out.println("Tarea completada :)");
+                System.out.println("----------------------");
+                System.out.println("Tarea '" + tarea.getNombre() + "' completada :)");
+                System.out.println("----------------------");
                 encontrada = true;
                 break;
             }
         }
         if (!encontrada) {
+            System.out.println("----------------------");
             System.out.println("No se encontró nunguna tarea con el ID: " + id);
+            System.out.println("----------------------");
         }
     }
 
@@ -44,9 +51,13 @@ public class GestorTareas implements Accionable {
         boolean eliminado = listaTareas.removeIf(tarea -> tarea.getId() == id);
 
         if (eliminado) {
-            System.out.println("La tarea " + id + " ha sido eliminada.");
+            System.out.println("----------------------");
+            System.out.println("La tarea '" + id + "' ha sido eliminada.");
+            System.out.println("----------------------");
         } else {
+            System.out.println("----------------------");
             System.out.println("ID no encontrado. No se pudo eliminar la tarea.");
+            System.out.println("----------------------");
         }
     }
 }
