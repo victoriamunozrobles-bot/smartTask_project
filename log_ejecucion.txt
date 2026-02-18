@@ -1,0 +1,227 @@
+PS C:\Users\victo\PROYECTOS\smartTask_project>  c:; cd 'c:\Users\victo\PROYECTOS\smartTask_project'; & 'C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin\java.exe' '@C:\Users\victo\AppData\Local\Temp\cp_c8afdqp193pwlt71wcix91dc5.argfile' 'App'
+______________________________________________________________
+Bienvenido a SmartTask
+______________________________________________________________
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 1
+
+--- AGREGAR TAREA ---
+Nombre de la tarea: leer un capítulo de mi libro 
+Seleccione la prioridad de la tarea:
+1. Tarea URGENTE
+2. Tarea NORMAL
+2
+----------------------
+Tarea agregada con éxito.
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 1
+
+--- AGREGAR TAREA ---
+Nombre de la tarea: 234
+Seleccione la prioridad de la tarea:
+1. Tarea URGENTE
+2. Tarea NORMAL
+2
+----------------------
+Tarea agregada con éxito.
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 4
+Ingrese el ID de la tarea a eliminar: 333
+----------------------
+ID no encontrado. No se pudo eliminar la tarea.
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 2
+-------------- Lista de tareas --------------
+ID: 1419 | Tarea: leer un cap?tulo de mi libro | Prioridad: 2 | Completada: false
+ID: 5972 | Tarea: 234 | Prioridad: 2 | Completada: false
+----------------------------------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 4
+Ingrese el ID de la tarea a eliminar: 5972
+----------------------
+La tarea '5972' ha sido eliminada.
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 1
+
+--- AGREGAR TAREA ---
+Nombre de la tarea: comprar pan
+Seleccione la prioridad de la tarea:
+1. Tarea URGENTE
+2. Tarea NORMAL
+1
+----------------------
+Tarea agregada con éxito.
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: escribir reporte 
+>>> ERROR: Entrada inválida. Por favor ingrese un número. <<<
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 1
+
+--- AGREGAR TAREA ---
+Nombre de la tarea: escribir reporte
+Seleccione la prioridad de la tarea:
+1. Tarea URGENTE
+2. Tarea NORMAL
+1
+----------------------
+Tarea agregada con éxito.
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 2
+-------------- Lista de tareas --------------
+ID: 1419 | Tarea: leer un cap?tulo de mi libro | Prioridad: 2 | Completada: false
+ID: 2379 | Tarea: comprar pan | Prioridad: 1 | Completada: false
+ID: 3659 | Tarea: escribir reporte | Prioridad: 1 | Completada: false
+----------------------------------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 3
+Ingrese el ID de la tarea a marcar como completada: 2379
+----------------------
+Tarea 'comprar pan' completada :)
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 3
+Ingrese el ID de la tarea a marcar como completada: 3659 
+----------------------
+Tarea 'escribir reporte' completada :)
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 1
+
+--- AGREGAR TAREA ---
+Nombre de la tarea: hacer la cama
+Seleccione la prioridad de la tarea:
+1. Tarea URGENTE
+2. Tarea NORMAL
+2
+----------------------
+Tarea agregada con éxito.
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 2
+-------------- Lista de tareas --------------
+ID: 1419 | Tarea: leer un cap?tulo de mi libro | Prioridad: 2 | Completada: false
+ID: 2379 | Tarea: comprar pan | Prioridad: 1 | Completada: true
+ID: 3659 | Tarea: escribir reporte | Prioridad: 1 | Completada: true
+ID: 8726 | Tarea: hacer la cama | Prioridad: 2 | Completada: false
+----------------------------------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 4
+Ingrese el ID de la tarea a eliminar: 8726
+----------------------
+La tarea '8726' ha sido eliminada.
+----------------------
+
+--- MENÚ PRINCIPAL ---
+1. Agregar Tarea
+2. Mostrar lista de Tareas
+3. Marcar como Completada
+4. Eliminar Tarea
+0. Salir
+----------------------
+Seleccione una opción: 0
+¡Gracias por usar SmartTask! ¡Hasta luego!
+PS C:\Users\victo\PROYECTOS\smartTask_project>
