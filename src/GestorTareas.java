@@ -60,4 +60,8 @@ public class GestorTareas implements Accionable {
             System.out.println("----------------------");
         }
     }
+
+    public List<Tarea> getTareas() {
+        return this.listaTareas;
+    }
 }
