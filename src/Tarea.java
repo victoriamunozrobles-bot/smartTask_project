@@ -43,4 +43,9 @@ public abstract class Tarea {
         this.completado = completado;
     }
 
+    @Override
+    public String toString() {
+        return "ID: " + id + " | Tarea: " + nombre + " | Prioridad: " + prioridad + " | Completada: " + completado;
+    }
+
 }
