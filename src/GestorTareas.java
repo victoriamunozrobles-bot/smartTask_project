@@ -33,9 +33,9 @@ public class GestorTareas implements Accionable {
                 encontrada = true;
                 break;
             }
-            if (!encontrada) {
-                System.out.println("No se encontró nunguna tarea con el ID: " + id);
-            }
+        }
+        if (!encontrada) {
+            System.out.println("No se encontró nunguna tarea con el ID: " + id);
         }
     }
 
