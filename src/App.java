@@ -41,7 +41,12 @@ public class App {
                         try {
                             prioridad = Integer.parseInt(scanner.nextLine());
                         } catch (NumberFormatException e) {
-                            System.out.println("Error: La prioridad debe ser un número. Se asignará 1 por defecto.");
+                            System.out.println("---------------------------------------------");
+
+                            System.out.println(
+                                    ">>> Error: La prioridad debe ser un número. Se asignará 1 por defecto. <<<");
+                            System.out.println("---------------------------------------------");
+
                             prioridad = 1;
                         }
                         Tarea nuevaTarea = null;
@@ -72,16 +77,26 @@ public class App {
 
                     case 0:
                         continuar = false;
+                        System.out.println("---------------------------------------------");
                         System.out.println("¡Gracias por usar SmartTask! ¡Hasta luego!");
+                        System.out.println("----------------------------------------------");
                         break;
 
                     default:
-                        System.out.println("Opción no válida. Por favor, intente de nuevo.");
+                        System.out.println("---------------------------------------------");
+
+                        System.out.println(">>> Opción no válida. Por favor, intente de nuevo. <<<");
+                        System.out.println("---------------------------------------------");
+
                         break;
                 }
 
             } catch (Exception e) {
+                System.out.println("---------------------------------------------");
+
                 System.out.println(">>> ERROR: Entrada inválida. Por favor ingrese un número. <<<");
+                System.out.println("---------------------------------------------");
+
                 scanner.nextLine();
             }
         }
