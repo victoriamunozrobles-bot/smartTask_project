@@ -1,3 +1,5 @@
+package main;
+
 public class TareaNormal extends Tarea {
 
     public TareaNormal(int id, String nombre, int prioridad) {

@@ -1,5 +1,13 @@
+package test;
+
 import org.junit.Before;
 import org.junit.Test;
+
+import main.GestorTareas;
+import main.Tarea;
+import main.TareaNormal;
+import main.TareaUrgente;
+
 import static org.junit.Assert.*;
 
 import java.util.List;
@@ -25,6 +33,14 @@ public class GestorTareasTest {
         assertEquals("Debería haber exactamente 1 tarea en la lista", 1, lista.size());
 
         assertEquals("Estudiar JUnit", lista.get(0).getNombre());
+    }
+
+    @Test
+    public void testAgregarTarea_emptyTaskList() {
+        List<Tarea> lista = gestor.getTareas();
+
+        assertTrue("La lista debería estar vacía", lista.isEmpty());
+
     }
 
     @Test
@@ -62,7 +78,17 @@ public class GestorTareasTest {
         gestor.agregarTarea(t1);
 
         gestor.listarTareas();
+    }
 
-        assertTrue(true);
+    @Test
+    public void testListarTareasFalla() {
+        Tarea t1 = new TareaNormal(5, "Test Listar", 2);
+        gestor.agregarTarea(t1);
+        gestor.agregarTarea(null);
+
+        assertThrows(NullPointerException.class, () -> {
+            gestor.listarTareas();
+        });
+
     }
 }

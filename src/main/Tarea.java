@@ -1,3 +1,5 @@
+package main;
+
 public abstract class Tarea {
     private int id;
     private String nombre;

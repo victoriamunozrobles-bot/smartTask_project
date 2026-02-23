@@ -1,3 +1,5 @@
+package main;
+
 public interface Accionable {
 
     public void agregarTarea(Tarea tarea);

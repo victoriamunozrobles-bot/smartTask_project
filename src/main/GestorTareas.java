@@ -1,3 +1,5 @@
+package main;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,6 +41,7 @@ public class GestorTareas implements Accionable {
                 break;
             }
         }
+
         if (!encontrada) {
             System.out.println("----------------------");
             System.out.println("No se encontró nunguna tarea con el ID: " + id);
