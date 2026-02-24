@@ -1,0 +1,60 @@
+PS C:\Users\victo\PROYECTOS\smartTask_project> .\compileAndTest.bat                                                            
+
+C:\Users\victo\PROYECTOS\smartTask_project>rd /s /q bin 
+
+C:\Users\victo\PROYECTOS\smartTask_project>javac -d bin src/main/*.java
+
+C:\Users\victo\PROYECTOS\smartTask_project>javac -cp "lib/*;bin" -d bin src/test/*.java 
+
+C:\Users\victo\PROYECTOS\smartTask_project>java -cp "lib/*;bin" org.junit.runner.JUnitCore test.GestorTareasTest 
+JUnit version 4.13.2
+.----------------------
+Tarea agregada con éxito.
+----------------------
+----------------------
+ID no encontrado. No se pudo eliminar la tarea.
+----------------------
+.----------------------
+Tarea agregada con éxito.
+----------------------
+------------------ Lista de tareas ------------------
+| ID: 5 | Nombre: Test Listar | Estado: Pendiente |
+------------------------------------------------------
+.----------------------
+Tarea agregada con éxito.
+----------------------
+----------------------
+No se encontró nunguna tarea con el ID: 999
+----------------------
+.----------------------
+Tarea agregada con éxito.
+----------------------
+----------------------
+Tarea agregada con éxito.
+----------------------
+------------------ Lista de tareas ------------------
+| ID: 5 | Nombre: Test Listar | Estado: Pendiente |
+..----------------------
+Tarea agregada con éxito.
+----------------------
+.----------------------
+Tarea agregada con éxito.
+----------------------
+----------------------
+Tarea agregada con éxito.
+----------------------
+----------------------
+La tarea '1' ha sido eliminada.
+----------------------
+.----------------------
+Tarea agregada con éxito.
+----------------------
+----------------------
+Tarea 'Pagar cuentas' completada :)
+----------------------
+.------------------ Lista de tareas ------------------
+------------------------------------------------------
+
+Time: 0,026
+
+OK (9 tests)

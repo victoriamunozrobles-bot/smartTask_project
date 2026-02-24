@@ -54,7 +54,15 @@ public class App {
                         Tarea nuevaTarea = null;
                         if (prioridad == 1) {
                             nuevaTarea = new TareaUrgente(idGenerado, nombre, 1);
+                        } else if (prioridad == 2) {
+                            nuevaTarea = new TareaNormal(idGenerado, nombre, 2);
                         } else {
+                            System.out.println("---------------------------------------------");
+
+                            System.out.println(
+                                    ">>> Opción de prioridad no válida. Se asignará NORMAL por defecto. <<<");
+                            System.out.println("---------------------------------------------");
+
                             nuevaTarea = new TareaNormal(idGenerado, nombre, 2);
                         }
 

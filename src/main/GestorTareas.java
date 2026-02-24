@@ -24,6 +24,10 @@ public class GestorTareas implements Accionable {
         for (Tarea tarea : listaTareas) {
             System.out.println(tarea.toString());
         }
+
+        if (listaTareas.isEmpty()) {
+            System.out.println("No hay tareas en la lista.");
+        }
         System.out.println("------------------------------------------------------");
     }
 
