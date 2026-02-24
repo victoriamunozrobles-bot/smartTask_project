@@ -56,6 +56,15 @@ public class GestorTareasTest {
     }
 
     @Test
+    public void testMarcarCompletada_IdNoExistente() {
+        gestor.agregarTarea(new TareaNormal(1, "Tarea Real", 1));
+
+        gestor.marcarCompletada(999);
+
+        assertFalse("La tarea original no debería haber cambiado", gestor.getTareas().get(0).getCompletado());
+    }
+
+    @Test
     public void testEliminarTarea() {
         Tarea t1 = new TareaNormal(1, "Tarea Uno", 2);
         Tarea t2 = new TareaNormal(2, "Tarea Dos", 2);
@@ -70,6 +79,15 @@ public class GestorTareasTest {
         assertEquals("Debería quedar 1 tarea", 1, gestor.getTareas().size());
 
         assertEquals(2, gestor.getTareas().get(0).getId());
+    }
+
+    @Test
+    public void testEliminarTarea_IdNoExistente() {
+        gestor.agregarTarea(new TareaNormal(1, "Tarea 1", 1));
+
+        gestor.eliminarTarea(50);
+
+        assertEquals("La lista debería seguir teniendo 1 tarea", 1, gestor.getTareas().size());
     }
 
     @Test
@@ -90,5 +108,14 @@ public class GestorTareasTest {
             gestor.listarTareas();
         });
 
+    }
+
+    @Test
+    public void testListarTareas_ListaVacia() {
+        try {
+            gestor.listarTareas();
+        } catch (Exception e) {
+            fail("listarTareas() no debería fallar con una lista vacía");
+        }
     }
 }
